@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements TopFragment.TopSe
 
     @Override
     public void createMeme(String top, String bottom) {
-        BottomFragment buttomFragment = (BottomFragment) getSupportFragmentManager().findFragmentById(R.id.fragmanet2);
+        BottomFragment buttomFragment = (BottomFragment) getFragmentManager().findFragmentById(R.id.fragmanet2);
         buttomFragment.setMemeText(top, bottom);
     }
 
